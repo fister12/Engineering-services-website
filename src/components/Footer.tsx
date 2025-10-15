@@ -6,25 +6,21 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-8 mt-20">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-6 gap-4">
-  <div className="font-bold text-xl text-yellow-600">Heavy Equipment & Building Services</div>
-        <div className="flex gap-6">
-          <a href="#hero" className="hover:text-yellow-400">Home</a>
-          <a href="#about" className="hover:text-yellow-400">About</a>
-          <a href="#services" className="hover:text-yellow-400">Services</a>
-          <a href="#gallery" className="hover:text-yellow-400">Gallery</a>
-          <a href="#contact" className="hover:text-yellow-400">Contact</a>
+    <footer className="bg-black text-white py-12 mt-24">
+      <div className="max-w-4xl mx-auto text-center px-6">
+        <div className="text-lg font-light mb-8">
+          <span className="text-yellow-500">Punakkattuthara</span> Engineering & Contractors
         </div>
-        <div className="flex gap-4">
-          {socialLinks.map((link) => (
-            <a key={link.name} href={link.href} className="hover:text-yellow-400" aria-label={link.name}>
-              <i className={link.icon + " text-xl"}></i>
-            </a>
-          ))}
+        <div className="flex justify-center gap-8 mb-8">
+          <a href="#hero" className="text-gray-400 hover:text-yellow-500 transition-colors font-light">Home</a>
+          <a href="#about" className="text-gray-400 hover:text-yellow-500 transition-colors font-light">About</a>
+          <a href="#services" className="text-gray-400 hover:text-yellow-500 transition-colors font-light">Services</a>
+          <a href="#gallery" className="text-gray-400 hover:text-yellow-500 transition-colors font-light">Gallery</a>
+          <a href="#contact" className="text-gray-400 hover:text-yellow-500 transition-colors font-light">Contact</a>
         </div>
+        <div className="w-16 h-0.5 bg-yellow-500 mx-auto mb-6"></div>
+        <div className="text-sm text-gray-500 font-light">© {new Date().getFullYear()} Punakkattuthara Engineering and Contractors. All rights reserved.</div>
       </div>
-  <div className="text-center text-gray-400 mt-4 text-sm">© {new Date().getFullYear()} Heavy Equipment & Building Services. All rights reserved.</div>
     </footer>
   );
 }
