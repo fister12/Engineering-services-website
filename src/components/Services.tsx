@@ -1,19 +1,27 @@
 const services = [
   {
+    name: "Heavy Structural Fabrication",
+    description: "Custom steel structures, industrial frameworks, and heavy-duty fabrication solutions."
+  },
+  {
+    name: "MS and SS Tanks for STP and ETP",
+    description: "Mild steel and stainless steel tanks for sewage and effluent treatment plants."
+  },
+  {
+    name: "Fire Water Tanks",
+    description: "Specialized fire protection water storage systems and safety infrastructure."
+  },
+  {
     name: "Heavy Equipment Rentals",
-    description: "Modern, well-maintained equipment for every job size."
+    description: "Modern, well-maintained construction and industrial equipment for rent."
   },
   {
-    name: "Construction Services",
-    description: "Expert building, renovation, and project management."
+    name: "TUG Boats",
+    description: "Marine tugboat services for vessel assistance and harbor operations."
   },
   {
-    name: "Plumbing Solutions",
-    description: "Professional plumbing installation, repair, and maintenance."
-  },
-  {
-    name: "Building Services",
-    description: "Electrical, painting, landscaping, and specialized trades."
+    name: "Barges & Pontoons",
+    description: "Marine transportation solutions and floating platform services."
   }
 ];
 
@@ -30,7 +38,7 @@ export default function Services() {
             Comprehensive solutions for your construction needs
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {services.map((service) => (
             <div key={service.name} className="text-center bg-gray-900 p-8 hover:bg-gray-800 transition-colors duration-300 border border-gray-700">
               <h3 className="text-2xl font-light text-white mb-4 border-b border-yellow-500 pb-2">{service.name}</h3>

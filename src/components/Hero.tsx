@@ -3,10 +3,10 @@ export default function Hero() {
     <section id="hero" className="min-h-screen flex items-center justify-center bg-black">
       <div className="max-w-5xl mx-auto text-center px-6 py-32">
         <h1 className="text-5xl md:text-6xl font-light text-white mb-8 leading-tight">
-          Professional <span className="text-yellow-500">Building Services</span>
+          Professional <span className="text-yellow-500">Engineering & Marine Services</span>
         </h1>
         <p className="text-xl md:text-2xl text-gray-300 mb-12 font-light max-w-3xl mx-auto leading-relaxed">
-          Heavy equipment rentals, construction, plumbing, and comprehensive building solutions for your projects.
+          Heavy structural fabrication, marine vessels, equipment rentals, and specialized engineering solutions.
         </p>
         <a 
           href="#contact" 

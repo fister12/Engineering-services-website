@@ -7,7 +7,7 @@ export default function About() {
         </h2>
         <div className="w-16 h-1 bg-yellow-500 mx-auto mb-16"></div>
         <p className="text-xl text-gray-300 mb-12 leading-relaxed font-light">
-          We provide professional building services including heavy equipment rentals, construction, and plumbing solutions. Our experienced team delivers reliable results for residential, commercial, and industrial projects.
+          We specialize in heavy structural fabrication, marine services, and industrial engineering solutions. From steel tanks for treatment plants to tugboats and barges, we deliver comprehensive engineering and marine services for industrial and commercial projects.
         </p>
         <p className="text-lg text-gray-400 leading-relaxed font-light">
           Every project is completed with attention to safety, efficiency, and quality standards.
