@@ -1,26 +1,19 @@
 @import "tailwindcss";
 
-
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
 .animate-fade-in {
   animation: fadeIn 1.5s ease-out;
 }
 
-
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
   font-family: var(--font-geist-sans, Arial, Helvetica, sans-serif);
-  scroll-behavior: smooth;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }

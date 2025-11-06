@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <div className="font-sans bg-black text-white scroll-smooth">
+    <div className="font-sans bg-white dark:bg-gray-900 text-gray-900 dark:text-white scroll-smooth transition-colors duration-500">
       <Navbar />
       <main>
         <Hero />
