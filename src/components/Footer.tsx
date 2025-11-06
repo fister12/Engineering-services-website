@@ -1,9 +1,3 @@
-const socialLinks = [
-  { name: "Facebook", href: "#", icon: "fab fa-facebook-f" },
-  { name: "Instagram", href: "#", icon: "fab fa-instagram" },
-  { name: "LinkedIn", href: "#", icon: "fab fa-linkedin-in" },
-];
-
 export default function Footer() {
   return (
     <footer className="bg-gray-900 dark:bg-black text-white py-16 border-t border-gray-200 dark:border-gray-800 transition-colors duration-500">

@@ -8,7 +8,7 @@ export default function Contact() {
           </h2>
           <div className="w-20 h-1 bg-yellow-500 mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 dark:text-gray-400 font-light">
-            Let's discuss your next project
+            Let&apos;s discuss your next project
           </p>
         </div>
         
