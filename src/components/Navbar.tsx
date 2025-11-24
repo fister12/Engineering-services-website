@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-700 transition-colors duration-300">
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
-        <div className="flex items-center gap-3 text-gray-900 dark:text-white">
+        <div className="flex items-center gap-3 text-gray-900 dark:text-white -ml-2 md:-ml-4">
               <div className="bg-white p-2 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
                 <Image
                   src="/final_logo.png"

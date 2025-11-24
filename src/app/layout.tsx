@@ -30,10 +30,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Explicit favicon links to ensure browsers pick up the tab icon */}
-        <link rel="icon" href="/final_logo(1).png" />
-        <link rel="shortcut icon" href="/final_logo(1).png" />
-        <link rel="apple-touch-icon" href="/final_logo(1).png" />
+        {/* Explicit favicon links to ensure browsers pick up the tab icon. */}
+        {/* Some browsers cache aggressively or have issues with parentheses in filenames – provide a clean fallback. */}
+        {/* Use cache-busting query params so browsers fetch the updated icon when you deploy. */}
+        <link rel="icon" type="image/png" href="/final_logo.png?v=3" />
+        <link rel="icon" type="image/png" href="/final_logo(1).png?v=3" />
+        <link rel="shortcut icon" href="/final_logo.png?v=3" />
+        <link rel="apple-touch-icon" href="/final_logo.png?v=3" />
+        {/* If you still see the old icon, add a real /favicon.ico (binary .ico) at /public and update the href above. */}
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
