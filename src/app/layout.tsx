@@ -15,6 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Punakkattuthara Engineering and Contractors",
   description: "Professional heavy equipment rentals, construction, plumbing, and comprehensive building solutions",
+  icons: {
+    icon: '/final_logo(1).png',
+    shortcut: '/final_logo(1).png',
+    apple: '/final_logo(1).png',
+  },
 };
 
 export default function RootLayout({
@@ -24,6 +29,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Explicit favicon links to ensure browsers pick up the tab icon */}
+        <link rel="icon" href="/final_logo(1).png" />
+        <link rel="shortcut icon" href="/final_logo(1).png" />
+        <link rel="apple-touch-icon" href="/final_logo(1).png" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
